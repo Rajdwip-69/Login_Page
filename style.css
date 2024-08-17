@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* cover all include in same file 300*300 like   */
+}
+
+.container{ /* parent class*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.jpg);
+    width: 100vw; /* vertical width*/
+    height: 100vh;/*vertical width */
+    background-size: cover; /* cover full image */
+}
+.loginPage{ /* child class of container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    background-color: #61606048;
+    border-radius: 30px;
+    backdrop-filter: blur(1px); 
+    gap: 20px;
+
+}
+.logindetails{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.password{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 15px;
+}
+h1{
+    font-size: 50px;
+   
+
+}
+input[type = "text"],input[type="password"]{
+   padding: 10px;
+   border: none;
+   border-radius: 10px;
+   font-size: 20px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    background: linear-gradient(45deg, rgb(228, 160, 97), rgb(98, 207, 132));
+}
+button:hover{
+    background-color: rgb(173, 124, 64);
+}
